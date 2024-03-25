@@ -20,6 +20,10 @@
 
 Oracle 19c.
 
+<h3>4. OLAP Database</h3>
+
+Apache Hive
+
 <h2>DEVLOPMENT</h2>
 
 
