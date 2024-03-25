@@ -36,6 +36,12 @@ Spark SQL is used to clean and transform data in Apache Hive. And, Spark ML is u
 
 The App is developed using Streamlit to present analytics visualizations and streaming stock price prediction.
 
+<h3>7. Orchestration & Scheduler</h3>
+
+**Apache Airflow**
+
+The data processes of the platform is orchestrated and scheduled by Apache Airflow.
+
 <h2>DEVLOPMENT</h2>
 
 
