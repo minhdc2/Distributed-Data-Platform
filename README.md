@@ -6,8 +6,8 @@
 
 <h3>1. Producer</h3>
 
-* **Container A**: 
-* **Container B**:
+* **Container A**: Provides API to retrieve historical price of a stock index.
+* **Container B**: Provides API to retrieve order statistics of a stock index.
 * **Program C**:
 
 <h2>DEVLOPMENT</h2>

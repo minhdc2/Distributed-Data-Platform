@@ -22,7 +22,7 @@ if __name__ == '__main__':
             continue
 
         # hnx_liveboard_crawler
-        hnx_url_path = 'https://trade.vndirect.com.vn/chung-khoan/hnx'
+        hnx_url_path = '' #removed url
         sfws.crawl_liveboard(url_path=hnx_url_path, topic='test-par1-rep1',
                              kafka_brokers=kafka_brokers, key=b'hnx')
 

@@ -9,7 +9,7 @@ app = Flask(__name__)
 api = Api(app)
 
 def crawl_hsx_historical_price(date_string, destination='./data/'):
-    url_path = f"https://s.cafef.vn/tracuulichsu2/1/hose/{date_string}.chn"
+    url_path = f"" #removed url
     soup = sfws.parse_html_with_selenium(url_path)
     table_tag = soup.find('table',
                           {'id': 'header_table_GDNN'})

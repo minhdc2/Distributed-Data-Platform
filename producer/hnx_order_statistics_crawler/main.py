@@ -9,7 +9,7 @@ app = Flask(__name__)
 api = Api(app)
 
 def crawl_hnx_order_statistics(date_string, destination='./data/'):
-    url_path = f"https://s.cafef.vn/tracuulichsu2/2/hnx/{date_string}.chn"
+    url_path = f"" #removed url
     soup = sfws.parse_html_with_selenium(url_path)
     table_tag = soup.find('table',
                           {'id': 'header_table_GDNN'})
