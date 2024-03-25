@@ -6,9 +6,9 @@
 
 <h3>1. Producer</h3>
 
-* Container A: 
-* Container B:
-* Program C:
+* **Container A**: 
+* **Container B**:
+* **Program C**:
 
 <h2>DEVLOPMENT</h2>
 
