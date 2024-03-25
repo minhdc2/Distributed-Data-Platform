@@ -34,7 +34,7 @@ Spark SQL is used to clean and transform data in Apache Hive. And, Spark ML is u
 
 <h3>6. Dashboard App</h3>
 
-
+The App is developed using Streamlit to present analytics visualizations and streaming stock price prediction.
 
 <h2>DEVLOPMENT</h2>
 
