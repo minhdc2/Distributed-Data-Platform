@@ -18,11 +18,13 @@
 
 <h3>3. OLTP Database</h3>
 
-Oracle 19c.
+**Oracle 19c.**
 
 <h3>4. OLAP Database</h3>
 
-Apache Hive
+**Apache Hive.**
+
+Apache Hive uses **HDFS (Apache Hadoop)** as data storage. The data is migrated from Oracle using **Apache Sqoop**.
 
 <h2>DEVLOPMENT</h2>
 
