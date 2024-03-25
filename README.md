@@ -26,6 +26,16 @@
 
 Apache Hive uses **HDFS (Apache Hadoop)** as data storage. The data is migrated from Oracle using **Apache Sqoop**.
 
+<h3>5. ETL/ML</h3>
+
+**Apache Spark**
+
+Apache Spark is used to clean and transform data in Apache Hive. And, Spark ML is used to train a time-series model to predict stock price. The model will then be fitted to streaming data from Kafka to generate real-time prediction.
+
+<h3>6. Dashboard App</h3>
+
+
+
 <h2>DEVLOPMENT</h2>
 
 
