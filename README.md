@@ -12,9 +12,13 @@
 
 <h3>2. Consumer</h3>
 
-* **Program D**: Retrieve historical price data from Container A then write to an OLTP database (Oracle).
-* **Program E**: Retrieve order statistics data from Container B then write to an OLTP database (Oracle).
-* **Program F**: Retrieve streaming liveboard data from **Apache Kafka** then write to an OLTP database (Oracle).
+* **Program D**: Retrieve historical price data from Container A then write to an OLTP database.
+* **Program E**: Retrieve order statistics data from Container B then write to an OLTP database.
+* **Program F**: Retrieve streaming liveboard data from **Apache Kafka** then write to an OLTP database.
+
+<h3>3. OLTP Database</h3>
+
+Oracle 19c.
 
 <h2>DEVLOPMENT</h2>
 
