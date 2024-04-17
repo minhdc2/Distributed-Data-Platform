@@ -2,7 +2,7 @@
 // WARNING: This class is AUTO-GENERATED. Modify at your own risk.
 //
 // Debug information:
-// Generated date: Wed Mar 20 14:09:56 GMT 2024
+// Generated date: Sun Apr 14 19:17:59 GMT 2024
 // For connector: org.apache.sqoop.manager.OracleManager
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.Text;
