@@ -4,7 +4,7 @@ import json
 from pyhive import  hive
 import os
 import sys
-sys.path.insert(1, '\\'.join(os.getcwd().split("\\")[:-2]))
+sys.path.insert(1, '\\'.join(os.getcwd().split("\\")[:-3]))
 import env.set_envs
 
 def migrate_to_hdfs(query, hive_table, target_dir, split_by, check_column,

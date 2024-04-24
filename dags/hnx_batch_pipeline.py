@@ -64,6 +64,30 @@ with DAG(
         on_failure_callback=mark_task_success,
     )
 
-    task1 >> task4
-    task2 >> task5
-    task3 >> task6
+    task7 = BashOperator(
+        task_id='hnx_historical_price_cleaner',
+        env=Variable.get('env', deserialize_json=True),
+        bash_command="cd /mnt/d/apps/ssh/run_spark/hnx_historical_price; python3 hnx_historical_price.py",
+        execution_timeout=timedelta(minutes=15),
+        on_failure_callback=mark_task_success,
+    )
+
+    task8 = BashOperator(
+        task_id='hnx_order_statistics_cleaner',
+        env=Variable.get('env', deserialize_json=True),
+        bash_command="cd /mnt/d/apps/ssh/run_spark/hnx_order_statistics; python3 hnx_order_statistics.py",
+        execution_timeout=timedelta(minutes=15),
+        on_failure_callback=mark_task_success,
+    )
+
+    task9 = BashOperator(
+        task_id='hnx_liveboard_records_cleaner',
+        env=Variable.get('env', deserialize_json=True),
+        bash_command="cd /mnt/d/apps/ssh/run_spark/hnx_liveboard_records; python3 hnx_liveboard_records.py",
+        execution_timeout=timedelta(minutes=15),
+        on_failure_callback=mark_task_success,
+    )
+
+    task1 >> task4 >> task7
+    task2 >> task5 >> task8
+    task3 >> task6 >> task9
