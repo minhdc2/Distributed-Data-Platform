@@ -3,9 +3,6 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
 from pyspark.sql.functions import col, lit
 import os
-import sys
-sys.path.insert(1, '\\'.join(os.getcwd().split("\\")[:-3]))
-import env.set_envs
 
 # start Spark session
 hostmachine = os.getenv('HOSTMACHINE')

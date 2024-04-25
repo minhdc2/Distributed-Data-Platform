@@ -9,7 +9,7 @@ username = os.getenv('REMOTE_USERNAME')
 password = os.getenv('REMOTE_PASSWORD')
 print(username, password)
 
-command = "cd /d D:\\apps\\spark\\etl\\hnx_liveboard_records && python hnx_liveboard_records.py"
+command = f"cd /d C:\\spark-3.0.3-bin-hadoop2.7\\bin && spark-submit --master spark://{os.getenv('HOSTMACHINE')}:7077 D:\\apps\\spark\\etl\\hnx_liveboard_records\\hnx_liveboard_records.py"
 print(command)
 
 ssh = paramiko.SSHClient()

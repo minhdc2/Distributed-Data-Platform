@@ -9,7 +9,7 @@ username = os.getenv('REMOTE_USERNAME')
 password = os.getenv('REMOTE_PASSWORD')
 print(username, password)
 
-command = "cd /d D:\\apps\\spark\\etl\\hnx_historical_price && python hnx_historical_price.py"
+command = f"cd /d C:\\spark-3.0.3-bin-hadoop2.7\\bin && spark-submit --master spark://{os.getenv('HOSTMACHINE')}:7077 D:\\apps\\spark\\etl\\hnx_historical_price\\hnx_historical_price.py"
 print(command)
 
 ssh = paramiko.SSHClient()
