@@ -62,3 +62,6 @@ print(f"{increment_df_cleaned.count()} rows will be appened!")
 # append data to stg table
 increment_df_cleaned.write.mode('append').format('hive').saveAsTable('stg.stg_hnx_order_statistics')
 print("The job has finished!")
+
+# stop SparkSession
+spark.stop()
