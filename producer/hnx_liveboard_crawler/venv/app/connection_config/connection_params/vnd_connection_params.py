@@ -14,6 +14,6 @@ input_source_links = {
 }
 
 login_info = {
-    'username': 'litesmelody',
-    'password': 'dcminh5+'
+    'username': '',
+    'password': ''
 }
